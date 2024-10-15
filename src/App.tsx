@@ -4,6 +4,7 @@
 import WhyChooseUs from './components/chooseUs';
 import Header from './components/header';
 import Hero from './components/hero';
+import MovingCompanyBanner from './components/movingCompany';
 import OurTeam from './components/team';
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
       <Hero />
       <WhyChooseUs />
       <OurTeam />
+      <MovingCompanyBanner />
     </>
   );
 }

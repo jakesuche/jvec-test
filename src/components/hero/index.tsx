@@ -3,7 +3,8 @@ const Hero = () => {
     <section className="hero">
       <div className="hero-content">
         <h1>
-          <span className="highlight">MOVE WITH</span>
+          <span className="highlight">MOVE </span>
+          <span>WITH</span>
           <br />
           CONFIDENCE:
         </h1>
@@ -12,7 +13,10 @@ const Hero = () => {
         <button className="btn btn-primary">Get Started</button>
       </div>
       <div className="hero-image">
-        <img src="/path-to-movers-image.jpg" alt="Movers packing boxes" />
+        <img
+          src="public/images/man_with_flower.png"
+          alt="Movers packing boxes"
+        />
       </div>
     </section>
   );

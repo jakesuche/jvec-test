@@ -1,24 +1,24 @@
 const OurTeam = () => {
+
+const skills = [
+  "Moving Techniques",
+  "Safety Protocols",
+  "Customer Service Standards",
+];
+
   return (
     <section className="our-team">
       <h2>OUR TEAM</h2>
       <h3>HIGHLY TRAINED PROFESSIONALS IN</h3>
       <div className="team-skills">
-        <div className="skill">
-          <img src="/path-to-moving-techniques.png" alt="Moving Techniques" />
-          <h4>Moving Techniques</h4>
-        </div>
-        <div className="skill">
-          <img src="/path-to-safety-protocols.png" alt="Safety Protocols" />
-          <h4>Safety Protocols</h4>
-        </div>
-        <div className="skill">
-          <img
-            src="/path-to-customer-service.png"
-            alt="Customer Service Standards"
-          />
-          <h4>Customer Service Standards</h4>
-        </div>
+        {skills.map((item, i) => (
+          <div className="skill">
+            <div>
+              <img src={`/images/team${i + 1}.png`} alt="Moving Techniques" />
+            </div>
+            <h4>{item}</h4>
+          </div>
+        ))}
       </div>
       <p>
         Our team comprises highly trained professionals who can handle moves of
@@ -29,7 +29,9 @@ const OurTeam = () => {
         standards to ensure your belongings are handled with the utmost care and
         professionalism.
       </p>
-      <button className="btn btn-primary">Learn More</button>
+      <div className="learn-more">
+        <button className="btn btn-primary">Learn More</button>
+      </div>
     </section>
   );
 };

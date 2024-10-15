@@ -3,3 +3,43 @@
   justify-content: center;
   align-items: center;
 }
+
+// Mixin for breakpoints
+@mixin respond-to($breakpoint) {
+  @if $breakpoint == small {
+    @media (min-width: 576px) { @content; }
+  } @else if $breakpoint == medium {
+    @media (min-width: 768px) { @content; }
+  } @else if $breakpoint == large {
+    @media (min-width: 1024px) { @content; }
+  } @else if $breakpoint == xlarge {
+    @media (min-width: 1440px) { @content; }
+  }
+}
+
+// Use the mixin
+.container {
+  width: 100%;
+  
+  @include respond-to(medium) {
+    width: 750px;
+  }
+  
+  @include respond-to(large) {
+    width: 960px;
+  }
+  
+  @include respond-to(xlarge) {
+    width: 1140px;
+  }
+}
+
+
+@function getRemValue($pixelSize) {
+  @return $pixelSize / 16 * 1rem;
+}
+
+@mixin font-size-rem($size) {
+  font-size: getRemValue($size);
+}
+

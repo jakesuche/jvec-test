@@ -1,46 +1,166 @@
-.why-choose-us {
+.why-choose-us__wrapper {
   background-color: #fff;
-  color: $secondary-color;
-  padding: 50px;
-  position: relative;
+//   padding: 20px;
+// background-image: url(public/images/road-track.png);
+  .why-choose-us {
+    background-color: #fff;
+    color: #333;
+    padding: 60px 0;
+    position: relative;
+    overflow: hidden;
+  
 
-  h2 {
-    font-size: 36px;
-    margin-bottom: 10px;
-  }
+    .content-wrapper {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      position: relative;
+      z-index: 2;
+    }
 
-  h3 {
-    font-size: 24px;
-    margin-bottom: 20px;
-  }
+    .left-column {
+      width: 45%;
+      padding-right: 20px;
 
-  p {
-    max-width: 800px;
-    margin-bottom: 30px;
-  }
+      h2 {
+        font-size: 32px;
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
 
-  .features {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 50px;
+      h3 {
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 20px;
+      }
+
+      p {
+        margin-bottom: 30px;
+        line-height: 1.6;
+      }
+
+      .learn-more-btn {
+        background-color: #ff4500;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+      }
+    }
+
+    .right-column {
+      width: 50%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      position: relative;
+      box-shadow: 2px 6px 62px 11px #0000000f;
+      padding: 20px;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 50%;
+        width: 1px;
+        background-color: #e0e0e0;
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 50%;
+        height: 1px;
+        background-color: #e0e0e0;
+      }
+    }
 
     .feature {
-      width: 30%;
+      width: calc(50% - 20px);
+      margin-bottom: 20px;
+      padding: 10px;
+      box-sizing: border-box;
+
+      .feature-icon {
+        width: 40px;
+        height: 40px;
+        margin-bottom: 10px;
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+
+      .exceptional-service {
+        background-image: url("/path-to-customer-service-icon.png");
+      }
+
+      .gps-tracking {
+        background-image: url("/path-to-gps-icon.png");
+      }
+
+      .comprehensive-services {
+        background-image: url("/path-to-services-icon.png");
+      }
 
       h4 {
         font-size: 18px;
+        font-weight: bold;
         margin-bottom: 10px;
+        color: #333;
+      }
+
+      p {
+        font-size: 14px;
+        line-height: 1.4;
+      }
+    }
+
+    .road-lines {
+      position: absolute;
+      bottom: -50px;
+      left: 0;
+      right: 0;
+      height: 200px;
+      z-index: 1;
+
+      svg {
+        width: 100%;
+        height: 100%;
       }
     }
   }
 
-  .road-image {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 100px;
-    background-image: url('/path-to-road-image.png');
-    background-size: cover;
+  @media (max-width: 768px) {
+    .why-choose-us {
+      .content-wrapper {
+        flex-direction: column;
+      }
+
+      .left-column,
+      .right-column {
+        width: 100%;
+        padding-right: 0;
+      }
+
+      .right-column {
+        &::before,
+        &::after {
+          display: none;
+        }
+      }
+
+      .feature {
+        width: 100%;
+        border-bottom: 1px solid #e0e0e0;
+
+        &:last-child {
+          border-bottom: none;
+        }
+      }
+    }
   }
 }
