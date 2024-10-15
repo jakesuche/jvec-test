@@ -1,54 +1,30 @@
-import React, { useState } from "react";
-
+import React from "react";
+import Slider from "react-slick";
+import "./index.scss";
 
 const SmoothMoveBlog = () => {
-  // State for controlling the active slide index
-  const [currentSlide, setCurrentSlide] = useState(0);
-
-  // Data for the blog posts (this could be fetched or passed as props)
-  const blogPosts = [
-    {
-      id: 1,
-      date: "July 10, 2024",
-      title:
-        "Settling into a new home: Strategies for an effortless movement, hassle-free",
-      image: "/path/to/truck-image-1.jpg",
-    },
-    {
-      id: 2,
-      date: "July 10, 2024",
-      title:
-        "Settling into a new home: Strategies for an effortless movement, hassle-free",
-      image: "/path/to/truck-image-2.jpg",
-    },
-    {
-      id: 3,
-      date: "July 10, 2024",
-      title:
-        "Settling into a new home: Strategies for an effortless movement, hassle-free",
-      image: "/path/to/truck-image-3.jpg",
-    },
-    {
-      id: 4,
-      date: "July 10, 2024",
-      title:
-        "Settling into a new home: Strategies for an effortless movement, hassle-free",
-      image: "/path/to/truck-image-4.jpg",
-    },
-  ];
-
-  // Function to handle next slide
-  const nextSlide = () => {
-    setCurrentSlide((prevSlide) =>
-      prevSlide === blogPosts.length - 1 ? 0 : prevSlide + 1
-    );
-  };
-
-  // Function to handle previous slide
-  const prevSlide = () => {
-    setCurrentSlide((prevSlide) =>
-      prevSlide === 0 ? blogPosts.length - 1 : prevSlide - 1
-    );
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
   };
 
   return (
@@ -63,32 +39,21 @@ const SmoothMoveBlog = () => {
         </p>
       </div>
 
-      <div className="carousel">
-        <button className="carousel-btn prev" onClick={prevSlide}>
-          ‹
-        </button>
-        <div className="carousel-track">
-          {blogPosts.map((post, index) => (
-            <div
-              className={`blog-card ${index === currentSlide ? "active" : ""}`}
-              key={post.id}
-              style={{
-                transform: `translateX(${(index - currentSlide) * 100}%)`,
-              }}
-            >
-              <img src={post.image} alt={post.title} />
-              <div className="blog-info">
-                <span>{post.date}</span>
-                <h4>{post.title}</h4>
-                <button className="read-more">Read More</button>
-              </div>
+      <Slider {...settings}>
+        {[1, 2, 3].map((_, index) => (
+          <div className="blog-card" key={index}>
+            <img src="/path/to/truck-image.jpg" alt="Moving truck" />
+            <div className="blog-info">
+              <span>July 10, 2024</span>
+              <h4>
+                Settling into a new home: Strategies for an effortless movement,
+                hassle-free
+              </h4>
+              <button className="read-more">Read More</button>
             </div>
-          ))}
-        </div>
-        <button className="carousel-btn next" onClick={nextSlide}>
-          ›
-        </button>
-      </div>
+          </div>
+        ))}
+      </Slider>
     </section>
   );
 };

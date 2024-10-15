@@ -1,5 +1,7 @@
 
 
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 import WhyChooseUs from './components/chooseUs';
 import ClientsWeServe from './components/clientWeServe';
@@ -8,6 +10,9 @@ import Hero from './components/hero';
 import MovingCompanyBanner from './components/movingCompany';
 import SmoothMoveBlog from './components/smoothMove';
 import OurTeam from './components/team';
+import FreeQuote from './components/freeQuote';
+import MoveAndClean from "./components/moveAndClean";
+
 
 function App() {
 
@@ -21,6 +26,8 @@ function App() {
       <MovingCompanyBanner />
       <ClientsWeServe />
       <SmoothMoveBlog />
+      <FreeQuote />
+      <MoveAndClean />
     </>
   );
 }
