@@ -1,0 +1,39 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: $secondary-color;
+
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  nav ul {
+    display: flex;
+    list-style-type: none;
+
+    li {
+      margin-right: 20px;
+
+      a {
+        color: $text-color;
+        text-decoration: none;
+
+        &:hover {
+          color: $primary-color;
+        }
+      }
+    }
+  }
+
+  .contact {
+    display: flex;
+    align-items: center;
+
+    .phone {
+      margin-right: 20px;
+    }
+  }
+}

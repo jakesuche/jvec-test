@@ -1,0 +1,25 @@
+*{
+  font-family: "Outfit", sans-serif;
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+body
+ {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: $background-color;
+  color: $text-color;
+}
+
+.btn {
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  
+  &.btn-primary {
+    background-color: $primary-color;
+    color: $text-color;
+  }
+}
+

@@ -1,0 +1,20 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+@import 'assets/style/variables';
+@import 'assets/style/mixing';
+@import 'assets/style/base';
+@import 'components/header';
+@import 'components/hero';
+@import 'components/chooseUs';
+@import 'components/team';
+
+
+
+*{
+  font-family: "Outfit", sans-serif;
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
