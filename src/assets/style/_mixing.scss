@@ -7,33 +7,45 @@
 // Mixin for breakpoints
 @mixin respond-to($breakpoint) {
   @if $breakpoint == small {
-    @media (min-width: 576px) { @content; }
+    @media (min-width: 576px) {
+      @content;
+    }
   } @else if $breakpoint == medium {
-    @media (min-width: 768px) { @content; }
+    @media (min-width: 768px) {
+      @content;
+    }
   } @else if $breakpoint == large {
-    @media (min-width: 1024px) { @content; }
+    @media (min-width: 1024px) {
+      @content;
+    }
   } @else if $breakpoint == xlarge {
-    @media (min-width: 1440px) { @content; }
+    @media (min-width: 1440px) {
+      @content;
+    }
   }
 }
 
 // Use the mixin
 .container {
   width: 100%;
-  
-  @include respond-to(medium) {
-    width: 750px;
-  }
-  
-  @include respond-to(large) {
-    width: 960px;
-  }
-  
-  @include respond-to(xlarge) {
-    width: 1140px;
-  }
-}
+  margin: 0px auto;
+  max-width: 1400px;
+  padding-left: 32px;
+  padding-right: 32px;
+  height: 100%;
 
+  // @include respond-to(medium) {
+  //   width: 750px;
+  // }
+
+  // @include respond-to(large) {
+  //   width: 960px;
+  // }
+
+  // @include respond-to(xlarge) {
+  //   width: 1140px;
+  // }
+}
 
 @function getRemValue($pixelSize) {
   @return $pixelSize / 16 * 1rem;
@@ -42,4 +54,3 @@
 @mixin font-size-rem($size) {
   font-size: getRemValue($size);
 }
-

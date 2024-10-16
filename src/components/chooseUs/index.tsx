@@ -19,43 +19,51 @@ const WhyChooseUs = () => {
               <div className="feature-icon exceptional-service">
                 <img src="/images/svg/service.svg" alt="" />
               </div>
-              <h4>EXCEPTIONAL CUSTOMER SERVICE</h4>
-              <p>
-                We prioritize customer satisfaction by offering friendly,
-                professional service. Our team is dedicated to making your
-                moving experience as stress-free as possible.
-              </p>
+              <div>
+                <h4>EXCEPTIONAL CUSTOMER SERVICE</h4>
+                <p>
+                  We prioritize customer satisfaction by offering friendly,
+                  professional service. Our team is dedicated to making your
+                  moving experience as stress-free as possible.
+                </p>
+              </div>
             </div>
 
             <div className="feature">
               <div className="feature-icon comprehensive-services">
                 <img src="/images/svg/comprehensive-service.svg" alt="" />
               </div>
-              <h4>COMPETITIVE PRICING</h4>
-              <p>
-                In addition to moving, we provide cleaning services to ensure
-                your new space is spotless and ready for you to move in.
-              </p>
+              <div>
+                <h4>COMPETITIVE PRICING</h4>
+                <p>
+                  In addition to moving, we provide cleaning services to ensure
+                  your new space is spotless and ready for you to move in.
+                </p>
+              </div>
             </div>
             <div className="feature">
               <div className="feature-icon gps-tracking">
                 <img src="/images/svg/tracking.svg" alt="" />
               </div>
-              <h4>GPS TRACKING</h4>
-              <p>
-                We provide real-time tracking of your belongings, giving you
-                peace of mind during the moving process.
-              </p>
+              <div>
+                <h4>GPS TRACKING</h4>
+                <p>
+                  We provide real-time tracking of your belongings, giving you
+                  peace of mind during the moving process.
+                </p>
+              </div>
             </div>
             <div className="feature">
               <div className="feature-icon comprehensive-services">
                 <img src="/images/svg/pricing.svg" alt="" />
               </div>
-              <h4>COMPREHENSIVE SERVICES</h4>
-              <p>
-                In addition to moving, we provide cleaning services to ensure
-                your new space is spotless and ready for you to move in.
-              </p>
+              <div>
+                <h4>COMPREHENSIVE SERVICES</h4>
+                <p>
+                  In addition to moving, we provide cleaning services to ensure
+                  your new space is spotless and ready for you to move in.
+                </p>
+              </div>
             </div>
           </div>
         </div>

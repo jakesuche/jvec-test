@@ -12,6 +12,7 @@ import SmoothMoveBlog from './components/smoothMove';
 import OurTeam from './components/team';
 import FreeQuote from './components/freeQuote';
 import MoveAndClean from "./components/moveAndClean";
+import Footer from "./components/footer";
 
 
 function App() {
@@ -28,6 +29,7 @@ function App() {
       <SmoothMoveBlog />
       <FreeQuote />
       <MoveAndClean />
+      <Footer />
     </>
   );
 }

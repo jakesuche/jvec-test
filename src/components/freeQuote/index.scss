@@ -1,81 +1,111 @@
 .free-quote-section {
-  background-color: #0e0e0e;
-  padding: 50px;
+  // background-color: #0e0e0e;
   color: #fff;
   text-align: center;
+  background-image: url(public/images/quote-bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
 
-  .quote-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 30px;
-
-    .quote-text {
-      text-align: left;
-      max-width: 60%;
-      
-      h2 {
-        font-size: 32px;
-        font-weight: bold;
-        margin-bottom: 20px;
-      }
-
-      p {
-        font-size: 16px;
-        color: #ccc;
-      }
-    }
-
-    .quote-btn {
+  .quote-container__wrapper {
+    background-color: #101010;
+    padding: 50px 0;
+    .quote-container {
       display: flex;
+      justify-content: space-between;
       align-items: center;
-      justify-content: flex-end;
-      gap: 10px;
-      
-      span {
-        font-size: 36px;
-        color: #ff4b2b;
-        font-weight: bold;
-      }
-      
-      button {
-        background: transparent;
-        border: none;
-        font-size: 36px;
-        color: #ff4b2b;
-        cursor: pointer;
+      margin-bottom: 30px;
+      gap: 40px;
 
-        .arrow {
-          transition: all 0.3s ease-in-out;
+      .quote-text {
+        text-align: left;
+        width: 25%;
+
+        h2 {
+          font-size: 32px;
+          font-weight: bold;
+          margin-bottom: 20px;
+          font-weight: 600;
         }
 
-        &:hover .arrow {
-          transform: translateX(10px);
+        p {
+          font-size: 18px;
+          color: #ccc;
+          font-size: 18px;
+          font-weight: 400;
+          line-height: 22.68px;
+          letter-spacing: 0.02em;
+          text-align: left;
+        }
+      }
+
+      .quote-btn {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 10px;
+        flex: 1;
+        justify-content: space-between;
+        border-bottom: 1px solid red;
+        padding-bottom: 50px;
+
+        span {
+          font-size: 36px;
+          color: #ff4b2b;
+          font-size: 71.81px;
+          font-weight: 500;
+          line-height: 90.48px;
+          letter-spacing: 0.02em;
+          text-align: left;
+        }
+
+        button {
+          background: transparent;
+          border: none;
+          font-size: 36px;
+          color: #ff4b2b;
+          cursor: pointer;
+
+          .arrow {
+            transition: all 0.3s ease-in-out;
+          }
+
+          &:hover .arrow {
+            transform: translateX(10px);
+          }
         }
       }
     }
   }
-
-  .app-download {
-    margin-top: 50px;
-
-    p {
-      font-size: 24px;
-      font-weight: bold;
-      margin-bottom: 20px;
-    }
-
-    .app-links {
+  .app-download__wrapper {
+    background-color: #000000E5;
+    padding: 50px 0;
+    .app-download {
       display: flex;
-      justify-content: center;
-      gap: 20px;
+      justify-content: space-between;
+      align-items: center;
 
-      img {
-        width: 150px;
-        cursor: pointer;
+      p {
+        font-weight: bold;
+        font-size: 32px;
+        font-weight: 600;
+        line-height: 40.32px;
+        letter-spacing: 0.02em;
+        text-align: left;
+      }
 
-        &:hover {
-          opacity: 0.8;
+      .app-links {
+        display: flex;
+        justify-content: center;
+        gap: 25px;
+
+        img {
+          cursor: pointer;
+          width: 231.92px;
+          height: 67px;
+
+          &:hover {
+            opacity: 0.8;
+          }
         }
       }
     }
