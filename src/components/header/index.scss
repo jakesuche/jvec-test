@@ -18,7 +18,7 @@
         font-weight: bold;
       }
       nav{
-        @include respond-to(small){
+        @include respond-to(medium){
           display: none;
         }
       }
@@ -55,7 +55,7 @@
 
     .phone {
       margin-right: 20px;
-      @include respond-to(small){
+      @include respond-to(medium){
         display: none;
       }
     }
@@ -63,7 +63,7 @@
       background: none;
       border: none;
       margin-left: 10px;
-      @include respond-to-min(small){
+      @include respond-to-min(medium){
         display: none;
       }
     }

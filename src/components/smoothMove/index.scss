@@ -1,17 +1,25 @@
 .smooth-move-blog {
   padding: 50px;
-  background-color: #282B2E;
+  background-color: #282b2e;
   color: #fff;
-  
+
   .blog-header {
     text-align: center;
     margin-bottom: 30px;
 
     
+    
+
     h2 {
       font-size: 47px;
       margin-bottom: 10px;
       text-transform: uppercase;
+      @media (max-width: 768px) {
+        font-size: 24px;
+      }
+
+      
+     
     }
 
     h3 {
@@ -20,7 +28,13 @@
       font-weight: 600;
       letter-spacing: 4;
       line-height: 40.32px;
-     
+      text-transform: uppercase;
+      @media (max-width: 768px) {
+        font-size: 18px;
+        line-height: 22.32px;
+      }
+      
+      
     }
 
     p {
@@ -35,8 +49,8 @@
   }
 
   .slick-slide {
-    >div { 
-      margin-inline: 35px; 
+    > div {
+      margin-inline: 35px;
     }
   }
 
@@ -48,18 +62,16 @@
     clip-path: polygon(100% 0, 0 48%, 100% 100%);
   }
 
-  .slick-next{
+  .slick-next {
     clip-path: polygon(0 0, 0% 100%, 90% 50%);
   }
 
   .blog-card {
-
     background-color: transparent;
     border: 1px solid #fff;
     text-align: center;
     transition: transform 0.3s;
-    
-    
+
     &:hover {
       transform: translateY(-10px);
     }
@@ -80,18 +92,15 @@
         font-size: 17px;
         color: #ccc;
         margin-bottom: 10px;
-          font-weight: 400;
+        font-weight: 400;
         text-transform: uppercase;
       }
-
-
 
       h4 {
         font-size: 20px;
         margin-bottom: 15px;
         color: #fff;
         font-weight: 500;
-      
       }
 
       .read-more {

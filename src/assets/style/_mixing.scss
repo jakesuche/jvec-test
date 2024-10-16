@@ -53,6 +53,10 @@
   padding-left: 32px;
   padding-right: 32px;
   height: 100%;
+  @include respond-to(medium) {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 
   // @include respond-to(medium) {
   //   width: 750px;
@@ -67,11 +71,9 @@
   // }
 }
 
-.flex{
-  display: flex
+.flex {
+  display: flex;
 }
-
-
 
 @function getRemValue($pixelSize) {
   @return $pixelSize / 16 * 1rem;

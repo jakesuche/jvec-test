@@ -14,11 +14,16 @@
       justify-content: space-between;
       align-items: center;
       margin-bottom: 30px;
+      flex-wrap: wrap;
       gap: 40px;
 
       .quote-text {
         text-align: left;
         width: 25%;
+        @include respond-to(medium) {
+          width: 100%;
+          text-align: center;
+        }
 
         h2 {
           font-size: 32px;
@@ -35,6 +40,10 @@
           line-height: 22.68px;
           letter-spacing: 0.02em;
           text-align: left;
+          @include respond-to(medium) {
+       
+          text-align: center;
+        }
         }
       }
 
@@ -47,6 +56,11 @@
         justify-content: space-between;
         border-bottom: 1px solid red;
         padding-bottom: 50px;
+          @include respond-to(medium) {
+       
+          padding-bottom: 1px;
+        }
+        
 
         span {
           font-size: 36px;
@@ -56,6 +70,10 @@
           line-height: 90.48px;
           letter-spacing: 0.02em;
           text-align: left;
+          @include respond-to(medium) {
+       
+          @include font-size-rem(30)
+        }
         }
 
         button {
@@ -77,12 +95,17 @@
     }
   }
   .app-download__wrapper {
-    background-color: #000000E5;
+    background-color: #000000e5;
     padding: 50px 0;
     .app-download {
       display: flex;
       justify-content: space-between;
       align-items: center;
+      flex-wrap: wrap;
+      @include respond-to(medium) {
+        justify-content: center;
+        gap: 20px;
+      }
 
       p {
         font-weight: bold;
@@ -97,6 +120,7 @@
         display: flex;
         justify-content: center;
         gap: 25px;
+        flex-wrap: wrap;
 
         img {
           cursor: pointer;
