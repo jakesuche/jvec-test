@@ -4,7 +4,7 @@
   .geographic-coverage {
     max-width: 1100px;
     margin: auto;
-    padding:50px 0;
+    padding: 50px 0;
 
     h2 {
       text-align: center;
@@ -17,7 +17,7 @@
       display: flex;
       flex-direction: column;
       gap: 20px;
-      background-image: url("/public/images/svg/map.svg");
+      background-image: url("//images/svg/map.svg");
       background-repeat: no-repeat;
       background-position: center;
       background-size: 60%;
@@ -51,16 +51,14 @@
     }
 
     .long-distance {
-        top: 30%;
-        right: 0px;
-        max-width: 700px;
-        line-height: 1.4;
-    //   align-self: flex-end;
-    //   text-align: right;
+      top: 30%;
+      right: 0px;
+      max-width: 700px;
+      line-height: 1.4;
+      //   align-self: flex-end;
+      //   text-align: right;
     }
   }
-
-
 
   @media (max-width: 768px) {
     .geographic-coverage {

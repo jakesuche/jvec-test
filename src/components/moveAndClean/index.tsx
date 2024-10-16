@@ -12,7 +12,7 @@ const MoveAndClean = () => {
             <button className="btn btn-primary">Learn More</button>
           </div>
           <div className="card-image">
-            <img src="/public/images/svg/clean-wheel.svg" alt="Company Logo" />
+            <img src="//images/svg/clean-wheel.svg" alt="Company Logo" />
           </div>
         </div>
       </div>
@@ -20,5 +20,4 @@ const MoveAndClean = () => {
   );
 };
 
-
-export default MoveAndClean
+export default MoveAndClean;

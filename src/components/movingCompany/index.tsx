@@ -4,7 +4,7 @@ const MovingCompanyBanner = () => {
       <div className="container">
         <div className="moving-company-banner">
           <div className="left-content">
-            <img src="public/images/movement.png" alt="movement" />
+            <img src="/images/movement.png" alt="movement" />
           </div>
           <div className="right-content">
             <h2>WHAT WE REPRESENT</h2>

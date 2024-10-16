@@ -34,7 +34,7 @@ const FreeQuote = () => {
                 alt="Download on the App Store"
               />
               <img
-                src="public/images/svg/play-store.svg"
+                src="/images/svg/play-store.svg"
                 alt="Get it on Google Play"
               />
             </div>

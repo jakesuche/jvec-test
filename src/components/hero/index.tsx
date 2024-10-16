@@ -13,10 +13,7 @@ const Hero = () => {
         <button className="btn btn-primary">Get Started</button>
       </div>
       <div className="hero-image">
-        <img
-          src="public/images/man_with_flower.png"
-          alt="Movers packing boxes"
-        />
+        <img src="/images/man_with_flower.png" alt="Movers packing boxes" />
       </div>
     </section>
   );

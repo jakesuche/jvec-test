@@ -1,4 +1,3 @@
-
 import Slider from "react-slick";
 import "./index.scss";
 
@@ -32,7 +31,9 @@ const SmoothMoveBlog = () => {
       <div className="container">
         <div className="blog-header">
           <h2>The Smooth Move Blog</h2>
-          <h3>Moving and Relocation Tips and <br /> Everything in Between</h3>
+          <h3>
+            Moving and Relocation Tips and <br /> Everything in Between
+          </h3>
           <p>
             Check out our blog for helpful tips and guides on making your move
             as smooth as <br /> possible! Topics include packing tips, moving
@@ -43,7 +44,7 @@ const SmoothMoveBlog = () => {
         <Slider {...settings}>
           {[1, 2, 3].map((_, index) => (
             <div className="blog-card" key={index}>
-              <img src="/public/images/relocation.png" alt="Moving truck" />
+              <img src="//images/relocation.png" alt="Moving truck" />
               <div className="blog-info">
                 <span>July 10, 2024</span>
                 <h4>
