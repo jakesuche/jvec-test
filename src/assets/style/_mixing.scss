@@ -47,6 +47,12 @@
   // }
 }
 
+.flex{
+  display: flex
+}
+
+
+
 @function getRemValue($pixelSize) {
   @return $pixelSize / 16 * 1rem;
 }

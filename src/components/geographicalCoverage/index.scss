@@ -1,0 +1,71 @@
+.geography-coverage__wrapper {
+  background-color: #fff;
+  color: #121212;
+  .geographic-coverage {
+    max-width: 1100px;
+    margin: auto;
+    padding:50px 0;
+
+    h2 {
+      text-align: center;
+      font-size: 32px;
+      font-weight: bold;
+      margin-bottom: 40px;
+    }
+
+    .coverage-info {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      background-image: url("/public/images/svg/map.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 60%;
+      min-height: 400px;
+      position: relative;
+    }
+
+    .coverage-box {
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      border-radius: 4px;
+      background-color: #fff;
+      position: absolute;
+
+      h3 {
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 10px;
+        display: inline;
+      }
+
+      p {
+        display: inline;
+        font-size: 16px;
+      }
+    }
+
+    .local {
+      left: 30px;
+      top: 10%;
+    }
+
+    .long-distance {
+        top: 30%;
+        right: 0px;
+        max-width: 700px;
+        line-height: 1.4;
+    //   align-self: flex-end;
+    //   text-align: right;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .geographic-coverage {
+      .coverage-box {
+        align-self: stretch;
+        text-align: left;
+      }
+    }
+  }
+}

@@ -1,4 +1,5 @@
-import React from "react";
+
+import Logo from "../logo";
 
 
 const Footer = () => {
@@ -6,14 +7,15 @@ const Footer = () => {
     <footer className="footer">
       <div className="footer-container">
         <div className="footer-section logo">
-          <img src={""} alt="JVEC Movers Logo" />
+          <Logo />
           <p>Copyright © 2024 JVEC Movers. All Rights Reserved.</p>
-          <button className="quote-button">Free Quote</button>
+          <p className="book-now highlight">Book Now - Schedule Your Move</p>
+          <button className="btn btn-primary">Free Quote</button>
         </div>
 
         <div className="footer-section services">
           <h3>SERVICES</h3>
-          <p>Residential Moving</p>
+          <p className="highlight">Residential Moving</p>
           <p>Complete Packing</p>
           <p>Loading and Unloading</p>
           <p>Transportation</p>
@@ -22,10 +24,10 @@ const Footer = () => {
           <p>Office and Business Relocations</p>
           <p>Packing and Transportation</p>
           <p>Setup Services</p>
-          <h4>Specialty Moves</h4>
+          <p className="highlight">Specialty Moves</p>
           <p>Delicate Items</p>
           <p>Heavy Furniture</p>
-          <h4>Cleaning Services</h4>
+          <p>Cleaning Services</p>
           <p>Post-Move Cleaning</p>
         </div>
 
@@ -52,17 +54,30 @@ const Footer = () => {
             <a href="mailto:hello@jvecmovers.com">hello@jvecmovers.com</a>
           </p>
           <h3>FOLLOW US</h3>
+          <p className="stay-connected">
+            Stay connected with us on social media for updates and promotions.
+          </p>
           <div className="social-icons">
-            <span>WhatsApp</span>
-            <span>Facebook</span>
+            <div className="flex">
+              <img src="/images/svg/whatsapp-icon.svg" alt="" />
+              <span>WhatsApp</span>
+            </div>
+            <div className="flex">
+              <img src="/images/svg/facebook-icon.svg" alt="" />
+              <span>Facebook</span>
+            </div>
           </div>
         </div>
       </div>
-      <div className="footer-road">
-        <div className="road-graphic"></div>
+      <div className="road-track">
+        <img
+          src="/images/road-track-red.png"
+          alt="/images/road-track-red.png"
+        />
       </div>
     </footer>
   );
+      
 };
 
 export default Footer;

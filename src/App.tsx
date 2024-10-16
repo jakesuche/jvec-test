@@ -13,6 +13,7 @@ import OurTeam from './components/team';
 import FreeQuote from './components/freeQuote';
 import MoveAndClean from "./components/moveAndClean";
 import Footer from "./components/footer";
+import GeographicCoverage from "./components/geographicalCoverage";
 
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
       <WhyChooseUs />
       <OurTeam />
       <MovingCompanyBanner />
+      <GeographicCoverage />
       <ClientsWeServe />
       <SmoothMoveBlog />
       <FreeQuote />
