@@ -44,7 +44,7 @@ const SmoothMoveBlog = () => {
         <Slider {...settings}>
           {[1, 2, 3].map((_, index) => (
             <div className="blog-card" key={index}>
-              <img src="//images/relocation.png" alt="Moving truck" />
+              <img src="/images/relocation.png" alt="Moving truck" />
               <div className="blog-info">
                 <span>July 10, 2024</span>
                 <h4>
