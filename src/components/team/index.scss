@@ -5,7 +5,10 @@
   background-repeat: no-repeat;
   background-size: contain;
   position: relative;
-  &::before{
+  @include respond-to(small) {
+    padding: 40px 0;
+  }
+  &::before {
     position: absolute;
     content: "";
     height: 100%;
@@ -13,8 +16,8 @@
     left: 0px;
     right: 0px;
     top: 0px;
-    background: #000000E8;
-  };
+    background: #000000e8;
+  }
 
   h2 {
     font-size: 36px;
@@ -28,18 +31,24 @@
     font-size: 24px;
     margin-bottom: 30px;
     text-align: center;
-     position: relative;
+    position: relative;
   }
 
   .team-skills {
     display: flex;
     justify-content: space-between;
     margin-bottom: 30px;
-     position: relative;
+    position: relative;
+    flex-wrap: wrap;
 
     .skill {
       width: 31.333%;
-       position: relative;
+      position: relative;
+      @include respond-to(small) {
+        width: 100%;
+        margin-top: 30px;
+      }
+
       //   background-color: darken($secondary-color, 5%);
 
       border-radius: 5px;
@@ -69,19 +78,19 @@
     margin-top: 50px;
     @include font-size-rem(27);
     text-align: center;
-     position: relative;
+    position: relative;
     .highlight {
       color: $primary-color;
     }
   }
 
-  .learn-more{
+  .learn-more {
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
-    button{
-       padding:10px 30px;
+    button {
+      padding: 10px 30px;
     }
   }
 }

@@ -31,6 +31,9 @@ const Header = () => {
           <div className="contact">
             <span className="phone">084-097-9054</span>
             <button className="btn btn-primary">Free Quote</button>
+            <button className="bugger">
+              <img src="images/svg/bugger.svg" alt=""  />
+            </button>
           </div>
         </div>
       </div>

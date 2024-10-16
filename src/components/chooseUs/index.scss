@@ -1,18 +1,15 @@
 .why-choose-us__wrapper {
   background-color: #fff;
-//   padding: 20px;
-// background-image: url(public/images/road-track.png);
+  //   padding: 20px;
+  // background-image: url(public/images/road-track.png);
   .why-choose-us {
     background-color: #fff;
     color: #333;
     padding: 60px 0;
     position: relative;
     overflow: hidden;
-  
 
     .content-wrapper {
-      max-width: 1200px;
-      margin: 0 auto;
       display: flex;
       position: relative;
       z-index: 2;
@@ -80,6 +77,10 @@
         top: 50%;
         height: 1px;
         background-color: #e0e0e0;
+      }
+
+      @include respond-to(small) {
+        margin-top: 50px;
       }
     }
 
